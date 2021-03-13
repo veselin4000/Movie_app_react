@@ -1,0 +1,51 @@
+body {
+  background: #141414;
+  color: #ffff;
+}
+
+.movie-app > .row{
+  overflow-x:  auto;
+  flex-wrap:  nowrap;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.image-container:hover .overlay{
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width:  100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  padding-bottom: 10%;
+  vertical-align: top;
+  overflow: hidden;
+}
