@@ -133,21 +133,6 @@ const App = () => {
               <option value="Year">Year (latest)</option>
             </select>
           </div>
-
-          {movies.map((movie, index) => {
-            return (
-              <div
-                Title={index}
-                imdbID={index}
-                className={
-                  view
-                    ? `movie-entity-container movie-entity-1`
-                    : `movie-entity-container movie-entity-2`
-                }
-              >
-              </div>
-            );
-          })}
         </div>
       </div>
     </div>
